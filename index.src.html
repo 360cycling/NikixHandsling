@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nicola Quaye — Manx road winner turning to the track. A sponsorship proposal to Handsling Bikes for a TR3evo endurance track frame.">
+<title>Nicola Quaye — Track Proposal</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira+Condensed:wght@500;600;700;800&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-base:#08090C; --bg-900:#0B0D12; --bg-800:#10131A; --surface:#141A22; --surface-2:#1B222C;
+  --border:#252E39; --line-soft:rgba(255,255,255,0.07);
+  --text-hi:#EEF2F6; --text:#AEBAC5; --text-mid:#7C8A96; --text-dim:#55616C;
+  --red:#E4342B; --red-2:#FF5C4E; --red-deep:#B3251E;
+  --amber:#F4B13C; --amber-2:#FFD37A; --gold:#F4B13C;
+  --mist:#4FD0C4;
+  --ease:cubic-bezier(.16,1,.3,1); --maxw:1160px;
+  --disp:'Saira Condensed',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif; --mono:'Spline Sans Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-base);color:var(--text);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--disp);color:var(--text-hi);font-weight:700;line-height:1.02;letter-spacing:.01em}
+.mono{font-family:var(--mono)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+section{position:relative}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.in [data-reveal],[data-reveal].in{opacity:1;transform:none}
+.in [data-reveal]:nth-child(2){transition-delay:.06s}.in [data-reveal]:nth-child(3){transition-delay:.12s}
+.in [data-reveal]:nth-child(4){transition-delay:.18s}.in [data-reveal]:nth-child(5){transition-delay:.24s}.in [data-reveal]:nth-child(6){transition-delay:.30s}
+@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1!important;transform:none!important;transition:none}}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:60;height:64px;display:flex;align-items:center;background:rgba(8,9,12,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.brand{display:flex;align-items:center;gap:11px}
+.brand .mono-mark{font-family:var(--disp);font-weight:800;font-size:20px;color:var(--text-hi);letter-spacing:.04em;border:1.5px solid var(--red);border-radius:8px;padding:1px 8px;line-height:1.25}
+.brand small{font-family:var(--mono);font-size:11px;color:var(--text-mid);letter-spacing:.14em;text-transform:uppercase}
+.tb-tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(244,177,60,.3);border-radius:999px;padding:6px 13px}
+@media(max-width:600px){.tb-tag{display:none}}
+
+/* hero */
+.hero{min-height:clamp(600px,96svh,940px);display:flex;align-items:flex-end;position:relative;overflow:hidden;isolation:isolate}
+.hero-photo{position:absolute;inset:0;z-index:-3;background:#000 center 28%/cover no-repeat;background-image:url('assets/img/hero-win.jpg');transform:scale(1.05);animation:heroZoom 22s var(--ease) infinite alternate}
+@keyframes heroZoom{to{transform:scale(1.0)}}
+.hero-grad{position:absolute;inset:0;z-index:-2;background:
+   radial-gradient(120% 90% at 80% 12%,rgba(244,177,60,.16),transparent 55%),
+   linear-gradient(180deg,rgba(8,9,12,.5) 0%,rgba(8,9,12,.12) 30%,rgba(8,9,12,.66) 68%,var(--bg-base) 99%),
+   linear-gradient(90deg,rgba(8,9,12,.86) 0%,rgba(8,9,12,.3) 52%,rgba(8,9,12,.1) 100%)}
+.hero-line{position:absolute;inset:0;z-index:-1;width:100%;height:100%}
+.hero-line path{fill:none;stroke:var(--red);stroke-width:2.2;opacity:.85;filter:drop-shadow(0 0 8px rgba(228,52,43,.5));stroke-dasharray:1;stroke-dashoffset:1;pathLength:1;animation:draw 3.2s var(--ease) .5s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero-inner{padding-bottom:clamp(42px,7vh,90px);padding-top:120px;width:100%}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--amber-2);margin-bottom:20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.eyebrow .flag{width:26px;height:16px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.15);overflow:hidden;display:inline-block}
+.flag svg{width:100%;height:100%;display:block}
+.hero h1{font-size:clamp(56px,12.5vw,168px);font-weight:800;letter-spacing:-.01em;color:#fff;text-shadow:0 6px 40px rgba(0,0,0,.5);line-height:.86}
+.hero h1 .l2{color:var(--text-hi)}
+.hero .role{font-family:var(--mono);font-size:clamp(13px,1.6vw,16px);letter-spacing:.16em;text-transform:uppercase;color:var(--text-hi);margin-top:22px}
+.hero .tagline{max-width:640px;font-size:clamp(16px,2vw,20px);color:var(--text);margin-top:16px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13.5px;font-weight:600;letter-spacing:.03em;padding:13px 22px;border-radius:999px;cursor:pointer;transition:transform .25s var(--ease),background .25s,border-color .25s,box-shadow .25s;border:1px solid transparent}
+.btn-primary{background:linear-gradient(120deg,var(--red),var(--red-2));color:#fff;box-shadow:0 8px 26px -8px rgba(228,52,43,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px -8px rgba(228,52,43,.7)}
+.btn-ghost{background:rgba(20,26,34,.5);border-color:var(--border);color:var(--text-hi);backdrop-filter:blur(6px)}
+.btn-ghost:hover{border-color:var(--amber);color:#fff;transform:translateY(-2px)}
+.ask-chip{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--amber-2);background:rgba(244,177,60,.08);border:1px solid rgba(244,177,60,.3);border-radius:999px;padding:7px 15px;margin-top:26px}
+.ask-chip .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(244,177,60,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(244,177,60,.5)}70%{box-shadow:0 0 0 9px rgba(244,177,60,0)}100%{box-shadow:0 0 0 0 rgba(244,177,60,0)}}
+
+/* stat band */
+.stats{background:var(--bg-900);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.stats .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line-soft)}
+@media(max-width:900px){.stats .grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.stats .grid{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--bg-900);padding:30px 18px;text-align:center}
+.stat-num{font-family:var(--disp);font-weight:700;font-size:clamp(34px,5vw,52px);color:var(--text-hi);line-height:1}
+.stat-num .u{font-family:var(--mono);font-size:.4em;color:var(--amber-2);font-weight:500;margin-left:2px;letter-spacing:0}
+.stat-lbl{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--text-mid);margin-top:11px}
+
+/* sections */
+.sec{padding:clamp(70px,10vh,124px) 0}
+.sec.band{background:var(--bg-800)}
+.sec.band2{background:var(--bg-900)}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--red-2);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--red);display:inline-block}
+.sec h2{font-size:clamp(32px,5vw,56px);font-weight:800;text-transform:uppercase;letter-spacing:.005em;margin-bottom:10px}
+.sec .sub{color:var(--text-mid);font-size:15px;margin-bottom:42px;max-width:680px}
+
+/* the ask */
+.ask-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(26px,4vw,52px);align-items:stretch}
+@media(max-width:860px){.ask-wrap{grid-template-columns:1fr}}
+.ask-card{background:linear-gradient(160deg,rgba(228,52,43,.14),rgba(20,26,34,.5));border:1px solid rgba(228,52,43,.32);border-radius:18px;padding:clamp(26px,3.4vw,40px);display:flex;flex-direction:column;justify-content:center}
+.ask-card .lead{font-family:var(--disp);font-weight:600;font-size:clamp(22px,2.7vw,32px);color:var(--text-hi);line-height:1.16}
+.ask-card .lead em{color:var(--red-2);font-style:normal}
+.ask-card p{margin-top:16px;font-size:15.5px;color:var(--text)}
+.ask-spec{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:clamp(24px,3vw,32px)}
+.ask-spec .t{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-mid);margin-bottom:16px}
+.ask-spec .frame{font-family:var(--disp);font-weight:800;font-size:clamp(30px,4vw,44px);color:#fff;line-height:1}
+.ask-spec .frame span{color:var(--amber)}
+.ask-spec .disc{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-2);margin-top:8px}
+.ask-spec ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.ask-spec li{display:flex;gap:12px;font-size:14.5px;color:var(--text)}
+.ask-spec li b{color:var(--text-hi);font-weight:600}
+.ask-spec li::before{content:"";flex:none;width:8px;height:8px;margin-top:8px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
+
+/* story */
+.story-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+@media(max-width:860px){.story-grid{grid-template-columns:1fr}}
+.story-photo{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.story-photo img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 42%}
+.story-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;color:#dfe8ee;background:linear-gradient(transparent,rgba(8,9,12,.9));text-transform:uppercase}
+.badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-2);background:rgba(244,177,60,.08);border:1px solid rgba(244,177,60,.26);border-radius:999px;padding:6px 13px;margin-bottom:22px}
+.story-copy p{margin-bottom:18px;font-size:clamp(15px,1.7vw,17.5px);color:var(--text)}
+.story-copy p.lead{color:var(--text-hi);font-size:clamp(16px,1.9vw,19px)}
+.pullquote{font-family:var(--disp);font-weight:600;font-size:clamp(20px,2.4vw,28px);color:var(--text-hi);line-height:1.2;border-left:3px solid var(--red);padding-left:22px;margin:6px 0 4px}
+.pullquote .src{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--text-mid);text-transform:none;margin-top:12px;font-weight:400}
+
+/* results */
+.res{display:flex;align-items:center;gap:18px;padding:15px 6px;border-bottom:1px solid var(--line-soft);transition:background .25s}
+.res:hover{background:rgba(255,255,255,.02)}
+.rank{flex:none;width:52px;height:52px;border-radius:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--disp);font-weight:700;line-height:1;border:1px solid var(--border)}
+.rank .p{font-size:22px}.rank .o{font-family:var(--mono);font-size:8.5px;font-weight:500;letter-spacing:.05em;margin-top:2px;opacity:.7}
+.rank.win{background:linear-gradient(150deg,rgba(244,177,60,.22),rgba(244,177,60,.05));border-color:var(--gold);color:var(--gold)}
+.rank.pod{background:linear-gradient(150deg,rgba(228,52,43,.18),rgba(228,52,43,.05));border-color:var(--red);color:var(--red-2)}
+.rank.top{background:linear-gradient(150deg,rgba(79,208,196,.14),rgba(79,208,196,.04));border-color:var(--mist);color:var(--mist)}
+.res .meta{flex:1;min-width:0}
+.res .rname{font-family:var(--disp);font-weight:600;font-size:19px;color:var(--text-hi)}
+.res .rdet{font-size:13px;color:var(--text-mid);margin-top:2px}
+.res .rdet b{color:var(--amber-2);font-weight:600}
+.res .rright{flex:none;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:4px 9px;background:var(--surface);white-space:nowrap}
+.res .rdate{font-family:var(--mono);font-size:12px;color:var(--text-dim)}
+@media(max-width:620px){.res{gap:12px}.res .rright .chip{display:none}.res .rname{font-size:17px}}
+.results-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(26px,4vw,48px);align-items:start}
+@media(max-width:900px){.results-grid{grid-template-columns:1fr}}
+.win-photo{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.win-photo img{width:100%;aspect-ratio:3/2.05;object-fit:cover;object-position:center 20%}
+.win-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:18px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:#eef3f6;text-transform:uppercase;background:linear-gradient(transparent,rgba(8,9,12,.92))}
+.win-photo .cap b{color:var(--amber-2)}
+
+/* track / why now — velodrome motif */
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,54px);align-items:center}
+@media(max-width:860px){.track-grid{grid-template-columns:1fr}}
+.velo{width:100%;height:auto}
+.velo .band{fill:none;stroke:var(--surface-2);stroke-width:20}
+.velo .lane{fill:none;stroke:var(--red);stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;pathLength:1}
+.in .velo .lane{animation:draw 2.4s var(--ease) forwards}
+.velo .lane2{fill:none;stroke:var(--amber);stroke-width:2;opacity:.7;stroke-dasharray:6 8}
+.track-copy p{font-size:clamp(15px,1.7vw,17.5px);margin-bottom:16px;color:var(--text)}
+.track-copy p.lead{color:var(--text-hi);font-size:clamp(16px,1.9vw,19px)}
+.heritage{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.heritage span{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--text-mid);border:1px solid var(--border);border-radius:999px;padding:6px 12px;background:var(--surface)}
+
+/* why handsling */
+.hs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.hs-grid{grid-template-columns:1fr}}
+.hs{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;transition:border-color .3s,transform .3s}
+.hs:hover{border-color:var(--red);transform:translateY(-3px)}
+.hs .n{font-family:var(--mono);font-size:12px;color:var(--red-2);border:1px solid rgba(228,52,43,.4);border-radius:7px;padding:5px 8px;display:inline-block;margin-bottom:14px}
+.hs h4{font-size:20px;font-weight:600;margin-bottom:8px;color:var(--text-hi)}
+.hs p{font-size:14.5px;color:var(--text)}
+
+/* partnership */
+.give-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,56px);align-items:start}
+@media(max-width:860px){.give-grid{grid-template-columns:1fr}}
+.give{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:14px;transition:border-color .3s,transform .3s}
+.give:hover{border-color:var(--amber);transform:translateX(4px)}
+.give .ic{font-family:var(--mono);font-size:12px;color:var(--amber);border:1px solid rgba(244,177,60,.4);border-radius:7px;padding:5px 8px;flex:none}
+.give p{color:var(--text-hi);font-size:15px;line-height:1.5}
+.give p b{color:#fff}
+.deal-card{background:linear-gradient(160deg,rgba(244,177,60,.12),rgba(20,26,34,.5));border:1px solid rgba(244,177,60,.3);border-radius:16px;padding:30px}
+.deal-card .t{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber-2);margin-bottom:16px}
+.deal-card .q{font-family:var(--disp);font-weight:600;font-size:clamp(20px,2.4vw,27px);color:var(--text-hi);line-height:1.22}
+
+/* contact */
+.contact{background:var(--bg-900);border-top:1px solid var(--line-soft);text-align:center;padding:clamp(70px,10vh,116px) 0 0}
+.contact .big{font-family:var(--disp);font-weight:700;font-size:clamp(26px,4vw,46px);text-transform:uppercase;letter-spacing:.01em;color:var(--text-hi);max-width:900px;margin:0 auto 12px}
+.contact .big em{color:var(--red-2);font-style:normal}
+.contact .csub{color:var(--text-mid);margin-bottom:38px}
+.ctiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:820px;margin:0 auto 40px}
+@media(max-width:720px){.ctiles{grid-template-columns:1fr}}
+.ctile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:left;transition:border-color .3s,transform .3s;display:block}
+.ctile:hover{border-color:var(--red);transform:translateY(-3px)}
+.ctile .cl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-mid);margin-bottom:8px}
+.ctile .cv{font-family:var(--mono);font-size:14.5px;color:var(--text-hi);word-break:break-word}
+.foot{padding:30px 0 40px;text-align:center}
+.foot .fl{font-family:var(--mono);font-size:12px;color:var(--text-dim);letter-spacing:.05em}
+.foot .credit{font-family:var(--mono);font-size:10.5px;color:var(--text-dim);margin-top:10px;opacity:.75;max-width:640px;margin-left:auto;margin-right:auto}
+
+/* phone tuning */
+@media (max-width:560px){
+  .story-photo .cap,.win-photo .cap{font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- Manx flag (Isle of Man) -->
+<svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true">
+  <symbol id="iom-flag" viewBox="0 0 30 18">
+    <rect width="30" height="18" fill="#C8102E"/>
+    <g fill="#F2E9C9" stroke="#7a5a12" stroke-width="0.3">
+      <circle cx="15" cy="9" r="3.2" fill="#F2E9C9"/>
+      <path d="M15 9 L15 3.4 L17.2 4.2 Z"/><path d="M15 9 L19.9 11.8 L18.2 13.6 Z"/><path d="M15 9 L10.1 11.8 L11.8 13.6 Z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="mono-mark">NQ</span><small>360cycling</small></div>
+    <span class="tb-tag">Track Proposal · Handsling</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-photo" role="img" aria-label="Nicola Quaye celebrating her Curlew Cup victory in 360cycling colours"></div>
+  <div class="hero-grad"></div>
+  <svg class="hero-line" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20,520 C300,520 420,300 700,300 S1140,180 1460,180"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="eyebrow" data-reveal>
+      <span class="flag"><svg aria-hidden="true"><use href="#iom-flag"></use></svg></span>
+      <span>Isle of Man · 360cycling · Age 20</span>
+    </div>
+    <h1 data-reveal>NICOLA<br><span class="l2">QUAYE</span></h1>
+    <div class="role" data-reveal>Road winner · Now for the track</div>
+    <p class="tagline" data-reveal>One season back and already a National A winner. A raw, aggressive, self-made engine ready to take on the boards.</p>
+    <div data-reveal><span class="ask-chip"><span class="dot"></span>Proposal for Handsling Bikes · a TR3evo endurance frame</span></div>
+    <div class="hero-cta" data-reveal>
+      <a class="btn btn-primary" href="#ask">The ask</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="grid">
+    <div class="stat"><div class="stat-num"><span class="count" data-count="2">2</span></div><div class="stat-lbl">Wins (2026)</div></div>
+    <div class="stat"><div class="stat-num"><span class="count" data-count="3">3</span></div><div class="stat-lbl">Podiums</div></div>
+    <div class="stat"><div class="stat-num"><span class="count" data-count="1">1</span></div><div class="stat-lbl">National A win</div></div>
+    <div class="stat"><div class="stat-num">8<span class="u">th</span></div><div class="stat-lbl">Nat Circuit Champs</div></div>
+    <div class="stat"><div class="stat-num"><span class="count" data-count="1">1</span></div><div class="stat-lbl">Season back</div></div>
+    <div class="stat"><div class="stat-num">QOM</div><div class="stat-lbl">Queen of the Ryals</div></div>
+  </div>
+</section>
+
+<!-- THE ASK -->
+<section class="sec" id="ask">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>01 — The ask</span></div>
+    <h2 data-reveal>One frame. A track campaign.</h2>
+    <p class="sub" data-reveal>A simple, specific proposal to Handsling Bikes: back Nicola's move to the track with the frame built for it.</p>
+    <div class="ask-wrap">
+      <div class="ask-card" data-reveal>
+        <div class="lead">After winning the Curlew Cup on the road, Nicola is turning her focus to the <em>track</em> — and she wants to do it on a Handsling.</div>
+        <p>The request is deliberately modest: a <b style="color:var(--text-hi)">TR3evo endurance frame</b>, not a full build and not wheels. She supplies the engine, the results and the story. Handsling supplies the frame that puts a proven winner on the boards.</p>
+      </div>
+      <div class="ask-spec" data-reveal>
+        <div class="t">The proposal</div>
+        <div class="frame">Handsling <span>TR3evo</span></div>
+        <div class="disc">Endurance track frame</div>
+        <ul>
+          <li><b>Frame only</b> — not a complete bike, not wheels</li>
+          <li>Endurance / mass-start discipline (points, scratch, elimination)</li>
+          <li>UCI-approved custom carbon, UK-built and painted</li>
+          <li>Raced in 360cycling / partner colours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE STORY -->
+<section class="sec band" id="story">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>02 — The story</span></div>
+    <h2 data-reveal>The comeback</h2>
+    <div class="story-grid">
+      <div class="story-copy" data-reveal>
+        <span class="badge">One comeback season to a National A win</span>
+        <p class="lead">Nicola Quaye is a 20-year-old Manx rider who, in her own words, "always got good results, but could never be bothered to do the training." So at the end of sixth form she took a full-time job as a nail technician and stepped away from the sport.</p>
+        <p>In August last year she got the itch again, went out for one ride, and got hooked. She started training that autumn — completely self-coached, adapting everything to fit herself, driven by the data and her own improvement.</p>
+        <p>Less than a year later, in her comeback season, she soloed away on the first lap of the 75-mile Curlew Cup and stayed away to take a remarkable maiden National A victory, adding the Queen of the Ryals climbing prize for good measure.</p>
+        <div class="pullquote">"I started riding again in August last year, and training from around October. But I've never had a coach. I've done it all myself."
+          <span class="src">— Nicola Quaye, Cycling Weekly</span>
+        </div>
+      </div>
+      <div class="story-photo" data-reveal>
+        <img src="assets/img/race-scene.jpg" alt="The women's field strung out on the country roads of the Curlew Cup">
+        <div class="cap">Curlew Cup, Northumberland · National Road Series</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec" id="results">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>03 — 2026 results</span></div>
+    <h2 data-reveal>One season back</h2>
+    <p class="sub" data-reveal>Selected results from Nicola's 2026 comeback season on the road — the proof of the engine now heading to the track.</p>
+    <div class="results-grid">
+      <div data-reveal>
+        <div class="res"><div class="rank win"><span class="p">1</span><span class="o">WIN</span></div><div class="meta"><div class="rname">Curlew Cup</div><div class="rdet"><b>Maiden National A win · solo · Queen of the Ryals</b></div></div><div class="rright"><span class="chip">National A</span><span class="rdate">09/08/2026</span></div></div>
+        <div class="res"><div class="rank win"><span class="p">1</span><span class="o">WIN</span></div><div class="meta"><div class="rname">Ronde van Wymeswold</div><div class="rdet">Stage 1</div></div><div class="rright"><span class="chip">National B</span><span class="rdate">20/06/2026</span></div></div>
+        <div class="res"><div class="rank pod"><span class="p">2</span><span class="o">nd</span></div><div class="meta"><div class="rname">Ronde van Wymeswold</div><div class="rdet">Stage 2</div></div><div class="rright"><span class="chip">National B</span><span class="rdate">20/06/2026</span></div></div>
+        <div class="res"><div class="rank top"><span class="p">8</span><span class="o">th</span></div><div class="meta"><div class="rname">National Circuit Championship</div><div class="rdet">Elite women</div></div><div class="rright"><span class="chip">National A</span><span class="rdate">26/06/2026</span></div></div>
+        <div class="res"><div class="rank top"><span class="p">10</span><span class="o">th</span></div><div class="meta"><div class="rname">Ronde van Wymeswold</div><div class="rdet">General Classification</div></div><div class="rright"><span class="chip">National B</span><span class="rdate">21/06/2026</span></div></div>
+        <div class="res"><div class="rank top"><span class="p">10</span><span class="o">th</span></div><div class="meta"><div class="rname">East Cleveland Classic</div><div class="rdet">One-day</div></div><div class="rright"><span class="chip">National A</span><span class="rdate">12/04/2026</span></div></div>
+      </div>
+      <div class="win-photo" data-reveal>
+        <img src="assets/img/win-celebration.jpg" alt="Nicola Quaye celebrating as she wins the Curlew Cup">
+        <div class="cap"><b>Curlew Cup winner</b> · beat a Handsling Alba rider by metres after a solo-and-two break</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THE TRACK -->
+<section class="sec band" id="track">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>04 — Why the track, why now</span></div>
+    <h2 data-reveal>Built for the boards</h2>
+    <div class="track-grid">
+      <div class="track-copy" data-reveal>
+        <p class="lead">The Curlew Cup showed exactly the qualities the track rewards: a huge engine, front-foot aggression, and the nerve to commit early and hold on. Now Nicola is going to hit the track hard.</p>
+        <p>Endurance track racing — the points race, scratch, elimination and madison — is made for a rider who attacks, reads a race, and can suffer at the front. It is also a discipline where a season of focused work turns raw ability into results fast.</p>
+        <p>And there is heritage. The Isle of Man is one of British cycling's great track nurseries, a small island that keeps producing world-class track riders. Nicola is the next Manx rider to take to the boards.</p>
+        <div class="heritage"><span>Isle of Man track pedigree</span><span>Endurance / mass-start</span><span>Self-coached, data-driven</span><span>Front-foot racer</span></div>
+      </div>
+      <div data-reveal>
+        <svg class="velo" viewBox="0 0 520 340" aria-label="Velodrome track illustration">
+          <ellipse class="band" cx="260" cy="170" rx="230" ry="132"/>
+          <path class="lane" pathLength="1" d="M46,170 a214,116 0 0,1 428,0 a214,116 0 0,1 -428,0"/>
+          <path class="lane2" d="M84,170 a176,86 0 0,1 352,0 a176,86 0 0,1 -352,0"/>
+          <circle cx="474" cy="170" r="6" fill="#F4B13C"/>
+          <text x="260" y="176" text-anchor="middle" font-family="Spline Sans Mono" font-size="14" fill="#7C8A96" letter-spacing="3">THE BOARDS · NEXT</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HANDSLING -->
+<section class="sec" id="handsling">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>05 — Why Handsling</span></div>
+    <h2 data-reveal>Why the TR3evo</h2>
+    <p class="sub" data-reveal>Handsling already builds the frame this campaign needs — and the fit runs deeper than the spec sheet.</p>
+    <div class="hs-grid">
+      <div class="hs" data-reveal><div class="n">01</div><h4>The right frame</h4><p>The TR3evo is Handsling's endurance track platform — UCI-approved custom carbon, built and painted in the UK. Exactly the tool for mass-start racing on the boards.</p></div>
+      <div class="hs" data-reveal><div class="n">02</div><h4>Already in the mix</h4><p>At the Curlew Cup, Nicola out-sprinted a Handsling Alba Development rider by a matter of metres. The obvious next step: put that engine on a Handsling.</p></div>
+      <div class="hs" data-reveal><div class="n">03</div><h4>A story worth backing</h4><p>Self-made, self-coached, back racing and winning already. A breakout narrative that is easy and rewarding for a British brand to be part of.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section class="sec band2" id="partnership">
+  <div class="wrap">
+    <div class="kicker" data-reveal><span>06 — The partnership</span></div>
+    <h2 data-reveal>What Handsling gets</h2>
+    <div class="give-grid">
+      <div data-reveal>
+        <div class="give"><span class="ic">01</span><p><b>Visible race results</b> on the TR3evo across a national-level endurance track campaign, in 360cycling / Handsling colours.</p></div>
+        <div class="give"><span class="ic">02</span><p><b>Content and storytelling</b> — a genuine comeback story, photography and social from every meeting, tagged and credited to Handsling.</p></div>
+        <div class="give"><span class="ic">03</span><p><b>A grounded, low-cost partnership</b> — the ask is a single frame, not a full sponsorship budget. High story-to-cost ratio.</p></div>
+        <div class="give"><span class="ic">04</span><p><b>Aligned values</b> — a British, custom, rider-first brand backing a British, self-made, rider-first athlete.</p></div>
+      </div>
+      <div class="deal-card" data-reveal>
+        <div class="t">The offer, simply</div>
+        <p class="q">You give one TR3evo endurance frame. She gives the engine, the results, the miles of content and a comeback story worth telling — raced proudly on a Handsling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center" data-reveal><span>07 — Contact</span></div>
+    <div class="big" data-reveal>Let's put Nicola on a <em>TR3evo</em></div>
+    <p class="csub" data-reveal>Happy to discuss the campaign, timelines and how we credit and activate the partnership.</p>
+    <div class="ctiles">
+      <a class="ctile" href="tel:+447376135824" data-reveal><div class="cl">Phone</div><div class="cv">+44 7376 135824</div></a>
+      <div class="ctile" data-reveal><div class="cl">Representation</div><div class="cv">Josh Whitehead · 360cycling</div></div>
+      <div class="ctile" data-reveal><div class="cl">Rider</div><div class="cv">Nicola Quaye · Isle of Man</div></div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="fl">NICOLA QUAYE · Track proposal for Handsling Bikes · 2026</div>
+    <div class="credit">Race photography: Olly Hassell / SWpix.com. Images shown for proposal purposes; to be licensed or replaced with team-owned photography before public/commercial publication.</div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16});
+  document.querySelectorAll('section').forEach(function(s){io.observe(s);});
+  var counts=document.querySelectorAll('.count');
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return; cio.unobserve(e.target);
+    var el=e.target,end=parseInt(el.getAttribute('data-count'),10); if(isNaN(end))return;
+    var dur=1000,t0=performance.now();
+    function tick(t){var p=Math.min(1,(t-t0)/dur),val=Math.round((1-Math.pow(1-p,3))*end);el.textContent=val;if(p<1)requestAnimationFrame(tick);else el.textContent=end;}
+    el.textContent='0';requestAnimationFrame(tick);
+  });},{threshold:.5});
+  counts.forEach(function(c){cio.observe(c);});
+})();
+</script>
+</body>
+</html>
